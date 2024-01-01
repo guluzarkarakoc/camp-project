@@ -2,14 +2,15 @@ import React, {useState,useEffect} from 'react'
 import { useParams } from 'react-router-dom'
 import { Button, Card, Image } from 'semantic-ui-react'
 import ProductService from '../Services/productService'
+
 export default function ProductDetail() {
     let { id } = useParams()
 
-    const [product, setProduct] = useState([])
+    const [product, setProduct] = useState({})
     useEffect(() => {
       let productService = new ProductService()
       productService.getByProductId(id).then(result=>setProduct(result.data.data))
-    })
+    },[])
 
     return (
         

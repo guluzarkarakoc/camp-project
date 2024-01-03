@@ -17,7 +17,7 @@ export default function Navi() {
     setIsAuthenticated(true)
    }
     return (
-        <div> <Menu inverted fixed="top" size='mini'>
+        <div> <Menu inverted fixed="top">
             <Container>
                 <Menu.Item
                     name='home' />
@@ -25,10 +25,10 @@ export default function Navi() {
                     name='messages' />
 
                 <Menu.Menu position='right'>
-                <CartSummary>
-                </CartSummary>
+                <CartSummary/>
              
-                {IsAuthenticated?<SignedIn signOut={handleSignOut}/> :<SignedOut singIn={handleSignIn}/>}
+                {IsAuthenticated?<SignedIn signOut={handleSignOut}/> 
+                :<SignedOut singIn={handleSignIn}/>}
                 
 
                 </Menu.Menu>

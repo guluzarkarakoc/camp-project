@@ -5,7 +5,6 @@ import { Grid } from 'semantic-ui-react'
 import { Route, Routes } from 'react-router-dom'
 import ProductDetail from '../pages/ProductDetail'
 import CartDetail from '../pages/CartDetail'
-import SignedIn from './SignedIn'
 import SignedOut from './SignedOut'
 
 

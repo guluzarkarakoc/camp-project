@@ -8,6 +8,7 @@ import 'semantic-ui-css/semantic.min.css'
 import 'semantic-ui-react'
 import { Provider } from 'react-redux';
 import { configureStore } from './store/configureStore';
+import "react-toastify/dist/ReactToastify.min.css"
 
 const store = configureStore()
 const root = ReactDOM.createRoot(document.getElementById('root'));

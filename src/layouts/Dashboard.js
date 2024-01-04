@@ -5,8 +5,8 @@ import { Grid } from 'semantic-ui-react'
 import { Route, Routes } from 'react-router-dom'
 import ProductDetail from '../pages/ProductDetail'
 import CartDetail from '../pages/CartDetail'
-import SignedOut from './SignedOut'
 import { ToastContainer } from 'react-toastify'
+import ProductAdd from '../pages/ProductAdd'
 
 
 
@@ -27,7 +27,7 @@ Dashboard() {
             <Route exact path="/products" component={ProductList} />
             <Route path="/products/:id" component={ProductDetail} />
             <Route path="/cart" component={CartDetail} />
-            <Route path="/login" component={SignedOut} />
+            <Route path="/product/add" component={ProductAdd} />
 
         </Routes>
        

@@ -6,7 +6,7 @@ export default function SignedIn({signOut}) {
     <div>
        <Menu.Item>
            
-         <Image avatar spaced="right" src="https://stock.adobe.com/tr/search?k=cat&asset_id=295949484" />
+         <Image avatar spaced="right" src="https://tr.wikipedia.org/wiki/Kedi#/media/Dosya:June_odd-eyed-cat_cropped.jpg" />
       
       <Dropdown pointing="top left" text="Kedy">
 <Dropdown.Menu>
